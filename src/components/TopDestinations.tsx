@@ -1,54 +1,63 @@
 import AliceCarousel from 'react-alice-carousel';
 import 'react-alice-carousel/lib/alice-carousel.css';
+import { Link } from 'react-router-dom';
 
 const destinations = [
     {
         id: 1,
         name: "United Kingdom",
         image: "https://img.freepik.com/free-photo/big-ben-with-sun-through-pedestrian-tunnel_268835-4014.jpg?w=740&t=st=1700119328~exp=1700119928~hmac=272a8bdf05d8e58bcbff436aa737a1508fcb04f0c2054af7be38723d2eaeb12d",
-        value: '174,688'
+        value: '174,688',
+        url: '/destination/destinationDetails'
     },
     {
         id: 2,
         name: "United Kingdom",
         image: "https://img.freepik.com/free-photo/big-ben-with-sun-through-pedestrian-tunnel_268835-4014.jpg?w=740&t=st=1700119328~exp=1700119928~hmac=272a8bdf05d8e58bcbff436aa737a1508fcb04f0c2054af7be38723d2eaeb12d",
-        value: '174,688'
+        value: '174,688',
+        url: '/destination/destinationDetails'
     },
     {
         id: 3,
         name: "United Kingdom",
         image: "https://img.freepik.com/free-photo/big-ben-with-sun-through-pedestrian-tunnel_268835-4014.jpg?w=740&t=st=1700119328~exp=1700119928~hmac=272a8bdf05d8e58bcbff436aa737a1508fcb04f0c2054af7be38723d2eaeb12d",
-        value: '174,688'
+        value: '174,688',
+        url: '/destination/destinationDetails'
     },
     {
         id: 4,
         name: "United Kingdom",
         image: "https://img.freepik.com/free-photo/big-ben-with-sun-through-pedestrian-tunnel_268835-4014.jpg?w=740&t=st=1700119328~exp=1700119928~hmac=272a8bdf05d8e58bcbff436aa737a1508fcb04f0c2054af7be38723d2eaeb12d",
-        value: '174,688'
+        value: '174,688',
+        url: '/destination/destinationDetails'
     },
     {
         id: 5,
         name: "United Kingdom",
         image: "https://img.freepik.com/free-photo/big-ben-with-sun-through-pedestrian-tunnel_268835-4014.jpg?w=740&t=st=1700119328~exp=1700119928~hmac=272a8bdf05d8e58bcbff436aa737a1508fcb04f0c2054af7be38723d2eaeb12d",
-        value: '174,688'
+        value: '174,688',
+        url: '/destination/destinationDetails'
     },
     {
         id: 6,
         name: "United Kingdom",
         image: "https://img.freepik.com/free-photo/big-ben-with-sun-through-pedestrian-tunnel_268835-4014.jpg?w=740&t=st=1700119328~exp=1700119928~hmac=272a8bdf05d8e58bcbff436aa737a1508fcb04f0c2054af7be38723d2eaeb12d",
-        value: '174,688'
+        value: '174,688',
+        url: '/destination/destinationDetails'
     },
     {
         id: 7,
         name: "United Kingdom",
         image: "https://img.freepik.com/free-photo/big-ben-with-sun-through-pedestrian-tunnel_268835-4014.jpg?w=740&t=st=1700119328~exp=1700119928~hmac=272a8bdf05d8e58bcbff436aa737a1508fcb04f0c2054af7be38723d2eaeb12d",
-        value: '174,688'
+        value: '174,688',
+        url: '/destination/destinationDetails'
     },
     {
         id: 8,
         name: "United Kingdom",
         image: "https://img.freepik.com/free-photo/big-ben-with-sun-through-pedestrian-tunnel_268835-4014.jpg?w=740&t=st=1700119328~exp=1700119928~hmac=272a8bdf05d8e58bcbff436aa737a1508fcb04f0c2054af7be38723d2eaeb12d",
-        value: '174,688'
+        value: '174,688',
+        url: '/destination/destinationDetails'
     },
 ]
 
@@ -60,13 +69,15 @@ const TopDestinations = () => {
     };
 
     const items = destinations.map((destination) => (
-        <div key={destination.id} className="carousel-item card card-compact bg-base-100 rounded-sm m-2">
-            <figure><img src={destination.image} alt={destination.name} /></figure>
-            <div className="card-body">
-                <h2 className="card-title">{destination.name}</h2>
-                <p>{destination.value} Travelers</p>
+        <Link to={destination.url}>
+            <div key={destination.id} className="carousel-item card card-compact bg-base-100 rounded-sm m-2">
+                <figure><img src={destination.image} alt={destination.name} /></figure>
+                <div className="card-body">
+                    <h2 className="card-title">{destination.name}</h2>
+                    <p>{destination.value} Travelers</p>
+                </div>
             </div>
-        </div>
+        </Link>
     ))
 
     return (

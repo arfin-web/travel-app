@@ -9,12 +9,17 @@ import {
 import Login from './pages/Login.tsx';
 import Destination from './pages/Destination.tsx';
 import DestinationDetails from './pages/DestinationDetails.tsx';
+import LandingPage from './pages/LandingPage.tsx';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
     children: [
+      {
+        path: "/",
+        element: <LandingPage />,
+      },
       {
         path: "/login",
         element: <Login />,
@@ -24,7 +29,7 @@ const router = createBrowserRouter([
         element: <Destination />,
       },
       {
-        path: "/destination/:id",
+        path: "/destination/destinationDetails",
         element: <DestinationDetails />,
       },
     ],
