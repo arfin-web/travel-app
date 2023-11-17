@@ -13,17 +13,19 @@ import WhyChooseUs from "../components/WhyChooseUs"
 const LandingPage = () => {
     return (
         <>
-            <Hero />
-            <TourTypes />
-            <WhyChooseUs />
-            <TopDestinations />
-            <FeaturedTours />
-            <WhyBest />
-            <Testimonials />
-            <Banner />
-            <Partners />
-            <LatestGuides />
-            <Gallary />
+            <div className="overflow-x-hidden">
+                <Hero />
+                <TourTypes />
+                <WhyChooseUs />
+                <TopDestinations />
+                <FeaturedTours />
+                <WhyBest />
+                <Testimonials />
+                <Banner />
+                <Partners />
+                <LatestGuides />
+                <Gallary />
+            </div>
         </>
     )
 }

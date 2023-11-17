@@ -11,15 +11,17 @@ const Testimonials = () => {
                         <img
                             src="https://img.freepik.com/free-photo/group-diverse-people-is-holding-hands-each-other_53876-16082.jpg?w=740&t=st=1700133445~exp=1700134045~hmac=9b3d1e08f8ddfbb491c258f01ab20c3db4ebbc070d2e6b2a753f8e94ec37cee0"
                             alt="group"
-                            className="w-80"
+                            className="w-80 animate-spin"
                         />
                     </div>
-                    <TestimonialCarousel />
+                    <div className="w-80 bg-base-100">
+                        <TestimonialCarousel />
+                    </div>
                     <div>
                         <img
                             src="https://img.freepik.com/free-photo/group-diverse-people-is-holding-hands-each-other_53876-16082.jpg?w=740&t=st=1700133445~exp=1700134045~hmac=9b3d1e08f8ddfbb491c258f01ab20c3db4ebbc070d2e6b2a753f8e94ec37cee0"
                             alt="group"
-                            className="w-80"
+                            className="w-80 animate-spin"
                         />
                     </div>
                 </div>

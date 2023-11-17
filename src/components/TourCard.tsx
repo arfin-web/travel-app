@@ -86,8 +86,8 @@ const tours = [
 
 const TourCard = () => {
     const responsive = {
-        0: { items: 2 },
-        600: { items: 3 },
+        0: { items: 1 },
+        600: { items: 1 },
         1024: { items: 4 },
     };
 

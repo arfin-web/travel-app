@@ -15,11 +15,11 @@ const Hero = () => {
                         <div className="flex gap-4">
                             <img
                                 src="https://img.freepik.com/free-photo/portrait-smiling-young-woman-standing-top-mountain-holding-hiking-stick_23-2148139782.jpg?w=740&t=st=1700061645~exp=1700062245~hmac=8fc5973d108a6ad46a2658ea81ebd5c25abbf008634880b4d88cc74b9c2e40ba"
-                                className="w-32 lg:w-60 h-32 lg:h-60 rounded-sm"
+                                className="w-32 lg:w-60 h-32 lg:h-60 rounded-sm animate-pulse"
                                 alt="heroImgOne" />
                             <img
                                 src="https://img.freepik.com/free-photo/full-length-shot-positive-photographer-takes-picture-turquoise-mountain-river-poses-beautiful-place-tourist-visit_273609-27385.jpg?w=360&t=st=1700061541~exp=1700062141~hmac=c23aa86df083d9798c8033206274f0762456ac3f6b7f74b1807be630dafdc68a"
-                                className="w-40 lg:w-72 rounded-sm"
+                                className="w-40 lg:w-72 rounded-sm animate-pulse"
                                 alt="heroImgOne" />
                         </div>
                     </div>

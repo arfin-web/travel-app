@@ -35,7 +35,7 @@ const LatestGuides = () => {
                     {
                         guides.map((guide) => (
                             <div className="card lg:card-side bg-base-100 rounded-sm" key={guide.id}>
-                                <figure><img className="w-full lg:w-52 h-full" src={guide.image} alt="Album" /></figure>
+                                <figure><img className="w-80 lg:w-52 h-full" src={guide.image} alt="Album" /></figure>
                                 <div className="card-body">
                                     <p>{guide.date} .Admin</p>
                                     <h2 className="card-title">{guide.title}</h2>

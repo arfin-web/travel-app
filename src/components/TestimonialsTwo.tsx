@@ -15,7 +15,9 @@ const TestimonialTwo = () => {
                     <div>
                         <h3 className="text-xl lg:text-2xl font-bold text-center">Testimonials</h3>
                         <h2 className="text-2xl lg:text-3xl font-bold text-center">What Travelers Say</h2>
-                        <TestimonialCarousel />
+                        <div className="w-80 bg-base-200">
+                            <TestimonialCarousel />
+                        </div>
                     </div>
                 </div>
             </div>

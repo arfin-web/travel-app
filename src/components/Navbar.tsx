@@ -42,7 +42,7 @@ const Navbar = () => {
                             <NavMenus />
                         </ul>
                     </div>
-                    <a className="text-xl font-bold">Travel</a>
+                    <Link to='/' className="text-xl font-bold">Trisog</Link>
                     <ul className="menu menu-horizontal px-1 hidden lg:flex">
                         <NavMenus />
                     </ul>

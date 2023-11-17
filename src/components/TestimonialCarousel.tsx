@@ -52,7 +52,7 @@ const TestimonialCarousel = () => {
     };
 
     const items = testimonials.map((testimonial) => (
-        <div key={testimonial.id} className="carousel-item card card-compact bg-base-100 rounded-sm m-2">
+        <div key={testimonial.id} className="carousel-item card card-compact rounded-sm m-2">
             <div className='flex justify-center items-center'>
                 <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="oklch(var(--wa))" viewBox="0 0 256 256"><path d="M100,56H40A16,16,0,0,0,24,72v64a16,16,0,0,0,16,16h60v8a32,32,0,0,1-32,32,8,8,0,0,0,0,16,48.05,48.05,0,0,0,48-48V72A16,16,0,0,0,100,56Zm0,80H40V72h60ZM216,56H156a16,16,0,0,0-16,16v64a16,16,0,0,0,16,16h60v8a32,32,0,0,1-32,32,8,8,0,0,0,0,16,48.05,48.05,0,0,0,48-48V72A16,16,0,0,0,216,56Zm0,80H156V72h60Z"></path></svg>
             </div>
@@ -64,17 +64,15 @@ const TestimonialCarousel = () => {
     ))
     return (
         <>
-            <div className='w-80'>
-                <AliceCarousel
-                    items={items}
-                    responsive={responsive}
-                    autoPlayInterval={1500} // Autoplay interval in milliseconds
-                    autoPlay={true}
-                    infinite={true}
-                    disableButtonsControls={true} // Disable navigation buttons
-                    disableDotsControls={false} // Disable pagination dots
-                />
-            </div>
+            <AliceCarousel
+                items={items}
+                responsive={responsive}
+                autoPlayInterval={1500} // Autoplay interval in milliseconds
+                autoPlay={true}
+                infinite={true}
+                disableButtonsControls={true} // Disable navigation buttons
+                disableDotsControls={false} // Disable pagination dots
+            />
         </>
     )
 }

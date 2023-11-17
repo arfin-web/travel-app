@@ -46,7 +46,7 @@ const TourTypes = () => {
                 <div className="grid grid-cols-2 lg:grid-cols-6 gap-4 lg:gap-6 place-items-stretch mt-10">
                     {
                         types.map((type) => (
-                            <div className="card bg-base-100 items-center rounded-sm mb-10" key={type.id}>
+                            <div className="card bg-base-100 items-center rounded-sm mb-10 hover:shadow-xl" key={type.id}>
                                 <div className="avatar mt-5">
                                     <div className="rounded-full bg-warning p-8">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#000000" viewBox="0 0 256 256"><path d={type.icon}></path></svg>
